@@ -8,4 +8,4 @@ Visit my portfolio: [Paraji Holkar's Portfolio](https://parajiholkar.github.io/p
 
 ## 📸 Screenshot
 
-![Portfolio Screenshot](https://github.com/parajiholkar/portfolio-paraji-holkar/blob/main/image/portfolio.png)
+![Portfolio Screenshot](https://github.com/user-attachments/assets/59268232-f571-40b1-b460-147195d8c74c)
