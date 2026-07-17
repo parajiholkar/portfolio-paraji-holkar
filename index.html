@@ -1,202 +1,381 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paraji Holkar | Software Developer Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="Style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paraji Holkar — Mobile App Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="Style.css">
 </head>
-<body class="bg-[#0b0f1a] text-slate-200 selection:bg-purple-500 selection:text-white">
+<body>
 
-    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10">
-        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/10 rounded-full blur-[120px]"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-600/10 rounded-full blur-[120px]"></div>
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo"><span class="dot"></span>paraji.holkar</a>
+    <nav class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn ghost" style="padding:10px 16px;">Get in touch</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="bars"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact" class="mm-cta">Get in touch →</a>
+  </nav>
+</header>
+
+<main id="home">
+
+  <!-- HOME  -->
+  <div class="home-row">
+    <div class="home-left">
+      <div class="eyebrow">~/dev/home</div>
+      <h1 class="headline">Paraji Holkar
+        <span class="role">Mobile App Developer — Android-focused, Flutter &amp; Cross-Platform</span>
+      </h1>
+      <p class="pitch">I build production mobile apps end-to-end native Android integrations, Flutter
+        cross-platform delivery, Firebase backends, and the performance details that make an app feel fast.</p>
+      <div class="actions">
+        <a href="#projects" class="btn">View projects →</a>
+        <a href="Resume\Paraji_Holkar_Resume.pdf" class="btn ghost" download>Download résumé</a>
+      </div>
     </div>
 
-    <nav class="fixed w-full z-50 glass px-6 py-4 flex justify-between items-center">
-        <div class="text-2xl font-black tracking-tighter gradient-text uppercase">Paraji</div>
-        <div class="hidden md:flex space-x-8 text-sm font-medium tracking-widest uppercase">
-            <a href="#home" class="hover:text-blue-400 transition">Home</a>
-            <a href="#about" class="hover:text-purple-400 transition">About</a>
-            <a href="#skills" class="hover:text-orange-400 transition">Skills</a>
-            <a href="#projects" class="hover:text-pink-400 transition">Projects</a>
-            <a href="#contact" class="hover:text-orange-400 transition">Contact Me</a>
+    <div class="home-right reveal">
+      <div class="code-window">
+        <div class="code-titlebar">
+          <div class="code-dots"><span></span><span></span><span></span></div>
+          <div class="code-tabs">
+            <span>build.gradle.kts</span>
+            <span class="tab-active">MainActivity.kt</span>
+            <span>main.dart</span>
+          </div>
         </div>
-    </nav>
-
-    <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-20">
-        <div class="text-center max-w-4xl">
-            <div class="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-blue-400 uppercase border border-blue-400/30 rounded-full bg-blue-400/5">
-                Available for New Opportunities
-            </div>
-            <h1 class="text-6xl md:text-8xl font-black mb-6 leading-tight">
-                Building <span class="gradient-text">Seamless</span> Digital Experiences.
-            </h1>
-            <p class="text-xl md:text-2xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                I'm <span class="text-white font-bold">Paraji Holkar</span>, a Software Developer specialized in crafting high-performance mobile and web applications with clean architecture.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#projects" class="bg-white text-black px-10 py-4 rounded-xl font-bold hover:bg-slate-200 transition-all shadow-xl">Explore Projects</a>
-                <a href="Resume\Paraji Holkar Resume Software.pdf" download class="glass px-10 py-4 rounded-xl font-bold hover:bg-slate-800 transition flex items-center gap-2">
-                    <i class="fas fa-file-download"></i> Get Resume
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div class="relative">
-                <div class="glass p-8 rounded-3xl border-l-4 border-l-purple-500 relative z-10">
-                    <h2 class="text-3xl font-bold mb-6">A Bit About Me</h2>
-                    <p class="text-slate-400 text-lg mb-6 leading-relaxed">
-                        Enthusiastic Software Engineer with strong foundations in OOP, Java, Flutter, and JavaScript. I focus on building scalable real-world applications and implementing MVC architecture to ensure long-term maintainability.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white/5">
-                            <div class="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div>
-                                <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Education</p>
-                                <p class="font-bold">BE - Information Technology </p>
-                                <p class="text-sm text-slate-400">PES Modern College of Engineering (7.16 CGPA) </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="space-y-8">
-                <h3 class="text-2xl font-bold flex items-center gap-3">
-                    <span class="w-10 h-1 bg-purple-500 rounded"></span>
-                    Professional Experience
-                </h3>
-                <div class="relative pl-8 border-l border-slate-800 space-y-12">
-                    <div class="relative">
-                        <div class="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-purple-500 shadow-[0_0_15px_#a855f7]"></div>
-                        <p class="text-purple-400 text-sm font-bold mb-1">Dec 2023 - Sep 2025 </p>
-                        <h4 class="text-xl font-bold">Mobile App Development Intern </h4>
-                        <p class="text-slate-500 mb-4">TechR Business Solutions, Pune </p>
-                        <ul class="text-slate-400 space-y-2 text-sm">
-                            <li>• Developed 3+ production-grade Flutter apps with Firebase integration.</li>
-                            <li>• Improved performance by <span class="text-white font-bold text-base">15%</span> via GetX/Provider optimization.</li>
-                            <li>• Integrated PhonePe payment gateways for smooth transactions.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="py-24 bg-slate-900/30">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16 italic">Technical <span class="gradient-text">Proficiency</span></h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="glass p-6 rounded-3xl card-hover text-center">
-                    <i class="fas fa-terminal text-3xl text-blue-400 mb-4"></i>
-                    <h5 class="font-bold mb-2">Languages </h5>
-                    <p class="text-xs text-slate-500">Java, Dart, JavaScript, C/C++ </p>
-                </div>
-                <div class="glass p-6 rounded-3xl card-hover text-center">
-                    <i class="fas fa-cubes text-3xl text-purple-400 mb-4"></i>
-                    <h5 class="font-bold mb-2">Frameworks </h5>
-                    <p class="text-xs text-slate-500">Flutter, React.js, Android </p>
-                </div>
-                <div class="glass p-6 rounded-3xl card-hover text-center">
-                    <i class="fas fa-cloud text-3xl text-pink-400 mb-4"></i>
-                    <h5 class="font-bold mb-2">Database </h5>
-                    <p class="text-xs text-slate-500">Firebase (NoSQL), MySQL </p>
-                </div>
-                <div class="glass p-6 rounded-3xl card-hover text-center">
-                    <i class="fas fa-sitemap text-3xl text-orange-400 mb-4"></i>
-                    <h5 class="font-bold mb-2">Architecture </h5>
-                    <p class="text-xs text-slate-500">MVC, OOPs, DS & Algorithms </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
-            <div>
-                <h2 class="text-5xl font-black mb-4 uppercase">Featured Work</h2>
-                <p class="text-slate-400">Scalable solutions built with modern tech stacks.</p>
-            </div>
-            <div class="bg-yellow-500/10 text-yellow-500 px-6 py-3 rounded-full border border-yellow-500/20 animate-pulse">
-                <i class="fas fa-trophy mr-2"></i> Winner: SRUJAN Project Competition 
-            </div>
+        <div class="code-body">
+          <div class="code-line"><span class="ln">1</span><span class="code"><span class="tok-kw">class</span> <span class="tok-type">MainActivity</span> : <span class="tok-type">AppCompatActivity</span>() {</span></div>
+          <div class="code-line"><span class="ln">2</span><span class="code"></span></div>
+          <div class="code-line"><span class="ln">3</span><span class="code">&nbsp;&nbsp;<span class="tok-kw">override fun</span> onCreate(state: <span class="tok-type">Bundle</span>?) {</span></div>
+          <div class="code-line"><span class="ln">4</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;<span class="tok-kw">super</span>.onCreate(state)</span></div>
+          <div class="code-line"><span class="ln">5</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;setContentView(<span class="tok-type">R</span>.layout.activity_main)</span></div>
+          <div class="code-line"><span class="ln">6</span><span class="code"></span></div>
+          <div class="code-line"><span class="ln">7</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;<span class="tok-cmt">// bind camera + firebase</span></span></div>
+          <div class="code-line"><span class="ln">8</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;viewModel.observe(<span class="tok-kw">this</span>) { state -&gt;</span></div>
+          <div class="code-line"><span class="ln">9</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;render(state)<span class="cursor"></span></span></div>
+          <div class="code-line"><span class="ln">10</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;}</span></div>
+          <div class="code-line"><span class="ln">11</span><span class="code">&nbsp;&nbsp;}</span></div>
+          <div class="code-line"><span class="ln">12</span><span class="code">}</span></div>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="group glass rounded-[2rem] overflow-hidden card-hover">
-                <div class="h-52 bg-gradient-to-br from-blue-900 to-indigo-900 flex items-center justify-center p-8">
-                    <i class="fas fa-video text-7xl text-white/10 group-hover:scale-110 transition duration-500"></i>
-                </div>
-                <div class="p-8">
-                    <h3 class="text-xl font-bold mb-2">Real-Time Communication App </h3>
-                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Engineered with Flutter & WebRTC. Optimized streaming to reduce latency by <span class="text-white font-bold">28%</span>.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[10px] bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full uppercase">Flutter</span>
-                        <span class="text-[10px] bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full uppercase">Provider</span>
-                        <span class="text-[10px] bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full uppercase">WebRTC</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="group glass rounded-[2rem] overflow-hidden card-hover">
-                <div class="h-52 bg-gradient-to-br from-purple-900 to-pink-900 flex items-center justify-center p-8">
-                    <i class="fas fa-cloud-sun text-7xl text-white/10 group-hover:rotate-12 transition duration-500"></i>
-                </div>
-                <div class="p-8">
-                    <h3 class="text-xl font-bold mb-2">Weather Forecast App </h3>
-                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Dynamic weather retrieval using REST APIs. Implemented MVC and GetX for scalability.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[10px] bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full uppercase">Flutter</span>
-                        <span class="text-[10px] bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full uppercase">GetX</span>
-                        <span class="text-[10px] bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full uppercase">REST API</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="group glass rounded-[2rem] overflow-hidden card-hover border-2 border-yellow-500/20">
-                <div class="h-52 bg-gradient-to-br from-green-900 to-emerald-900 flex items-center justify-center p-8 relative">
-                    <i class="fas fa-seedling text-7xl text-white/10 group-hover:scale-125 transition duration-500"></i>
-                    <div class="absolute top-4 right-4 bg-yellow-500 text-black text-[10px] font-bold px-3 py-1 rounded-full">AWARD WINNING</div>
-                </div>
-                <div class="p-8">
-                    <h3 class="text-xl font-bold mb-2">Agrimate App </h3>
-                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Winner of the SRUJAN Competition. Developed to solve agricultural challenges.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[10px] bg-green-500/20 text-green-300 px-3 py-1 rounded-full uppercase">Android</span>
-                        <span class="text-[10px] bg-green-500/20 text-green-300 px-3 py-1 rounded-full uppercase">REST API</span>
-                        <span class="text-[10px] bg-green-500/20 text-green-300 px-3 py-1 rounded-full uppercase">Product MVP</span>
-                    </div>
-                </div>
-            </div>
+        <div class="terminal-window">
+          <div class="term-titlebar"><span></span><span></span><span></span></div>
+          <div class="term-body">
+            <div class="term-line"><span class="prompt">$</span> ./gradlew assembleRelease</div>
+            <div class="term-line ok">✓ BUILD SUCCESSFUL in 42s</div>
+            <div class="term-line"><span class="prompt">$</span> flutter build apk --release</div>
+            <div class="term-line ok">✓ Built app-release.apk</div>
+            <div class="term-line"><span class="prompt">$</span> adb install app-release.apk<span class="cursor" style="background:var(--bg);"></span></div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
 
-    <section id="contact" class="py-24 bg-[#080b14] px-6">
-        <div class="max-w-4xl mx-auto text-center glass p-16 rounded-[4rem] border-2 border-slate-800/50">
-            <h2 class="text-5xl font-black mb-8 leading-tight">Ready to start a <br><span class="gradient-text">Project Together?</span></h2>
-            <div class="flex flex-col md:flex-row justify-center gap-8 mb-12">
-                <a href="mailto:parajiholkar81@gmail.com" class="text-2xl font-bold hover:text-blue-400 transition">parajiholkar81@gmail.com</a>
-                <div class="text-2xl font-bold hover:text-purple-400 transition">+91 8788286217</div>
-            </div>
-            
-            <div class="flex justify-center gap-6">
-                <a href="https://www.linkedin.com/in/paraji-holkar/" target="_blank" class="w-14 h-14 rounded-2xl glass flex items-center justify-center text-2xl hover:bg-blue-600 transition duration-500"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/parajiholkar" target="_blank" class="w-14 h-14 rounded-2xl glass flex items-center justify-center text-2xl hover:bg-purple-600 transition duration-500"><i class="fab fa-github"></i></a>
-            </div>
+  <!-- ===== HOME — STAT STRIP (horizontal) ===== -->
+  <div class="home-stats reveal">
+    <div class="stat"><div class="num">1.5+</div><div class="label">years, production mobile dev</div></div>
+    <div class="stat"><div class="num">6+</div><div class="label">apps shipped to production</div></div>
+    <div class="stat"><div class="num">1st</div><div class="label">prize, 60+ team competition</div></div>
+  </div>
+
+  <!-- ===== ABOUT / SKILLS ===== -->
+  <section class="block" id="about">
+    <div class="wrap">
+      <div class="block-head reveal">
+        <div>
+          <div class="eyebrow">~/dev/about</div>
+          <h2>Stack &amp; approach</h2>
         </div>
-        
-        <footer class="mt-24 text-center text-slate-600 text-sm tracking-widest uppercase">
-            &copy; 2025 Paraji Holkar • Made with <i class="fas fa-heart text-red-500 mx-1"></i> in Pune
-        </footer>
-    </section>
+        <div class="count">05 categories</div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a mobile developer who works natively on Android and cross-platform with Flutter, and
+            enjoys owning a feature end-to-end architecture, Firebase schema, native platform channels,
+            and the release checklist that comes after.</p>
+          <p>Most recently I designed an on-device expiry-date detection flow that cut manual verification
+            by 45%, and added multi-language support that reached 1,000+ non-English-speaking users.</p>
+          <p>I like working close to the native Android layer when a cross-platform framework alone isn't
+            enough, and I default to clean, testable architecture even when nobody's asking for it yet.</p>
+        </div>
+
+        <div class="skill-groups reveal">
+          <div class="skill-group">
+            <div class="g-label">// languages</div>
+            <div class="chip-row">
+              <span class="chip">Java</span><span class="chip">Dart</span><span class="chip">C++</span>
+              <span class="chip">SQL</span><span class="chip">JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="g-label">// platforms &amp; frameworks</div>
+            <div class="chip-row">
+              <span class="chip">Android SDK</span><span class="chip">Flutter</span><span class="chip">React.js</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="g-label">// cloud &amp; data</div>
+            <div class="chip-row">
+              <span class="chip">Firebase</span><span class="chip">Firestore</span><span class="chip">FCM</span>
+              <span class="chip">MySQL</span><span class="chip">SQLite</span><span class="chip">Hive</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="g-label">// concepts</div>
+            <div class="chip-row">
+              <span class="chip">Native Android Integration</span><span class="chip">REST APIs</span>
+              <span class="chip">Clean Architecture</span><span class="chip">GetX</span><span class="chip">Provider</span>
+              <span class="chip">WebRTC</span><span class="chip">Payments</span><span class="chip">DSA</span><span class="chip">OOP</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="g-label">// tools</div>
+            <div class="chip-row">
+              <span class="chip">Git</span><span class="chip">Android Studio</span><span class="chip">VS Code</span>
+              <span class="chip">Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="block" id="experience">
+    <div class="wrap">
+      <div class="block-head reveal">
+        <div>
+          <div class="eyebrow">~/dev/experience</div>
+          <h2>Experience</h2>
+        </div>
+        <div class="count">02 roles</div>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <div class="tl-date">// 2025.12 — present</div>
+          <div class="tl-role">Flutter Developer</div>
+          <div class="tl-org">Dhruv Global IT Solutions Pvt Ltd · Pune</div>
+          <ul class="tl-list">
+            <li>Expanded product accessibility for <b>1,000+ users</b> by adding multi-language support.</li>
+            <li>Designed an end-to-end expiry-date detection algorithm, improving extraction accuracy by <b>45%</b>.</li>
+            <li>Built the camera module using <b>native Android code</b> via Flutter platform channels.</li>
+            <li>Shipped <b>3 production apps</b> to the Play Store owned architecture, Firebase (Auth, Firestore, FCM, Analytics), and AdMob end-to-end.</li>
+            <li>Built Firebase Cloud Functions for scheduled jobs and push-notification workflows.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">// 2023.12 — 2025.09</div>
+          <div class="tl-role">Mobile App Development Intern</div>
+          <div class="tl-org">TechR Business Solutions · Pune</div>
+          <ul class="tl-list">
+            <li>Delivered <b>3+ production-grade apps</b> with Firebase and Cloud Messaging across the full dev cycle.</li>
+            <li>Improved app performance by <b>30%</b> by refactoring state management to GetX and Provider.</li>
+            <li>Integrated the PhonePe payment gateway, including edge cases and secure transaction handling.</li>
+            <li>Introduced an MVC architecture the team kept using after I left.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="block" id="projects">
+    <div class="wrap">
+      <div class="block-head reveal">
+        <div>
+          <div class="eyebrow">~/dev/projects</div>
+          <h2>Selected projects</h2>
+        </div>
+        <div class="count">04 builds</div>
+      </div>
+
+      <div class="proj-grid reveal">
+        <div class="proj-card">
+          <div class="proj-top">
+            <span class="proj-file">zhopper.dart</span>
+          </div>
+          <h3>Zhopper</h3>
+          <p>Deal-aggregator app pulling offers from multiple e-commerce platforms into one place, with
+            third-party API and OAuth integration on a clean MVVM structure.</p>
+          <div class="proj-tags"><span>Flutter</span><span>REST API</span><span>GetX</span><span>MySQL</span><span>MVVM</span></div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-top">
+            <span class="proj-file">weather_forecast.dart</span>
+          </div>
+          <h3>Weather Forecast App</h3>
+          <p>Consumes the OpenWeather REST API with location-based updates and a caching layer that cut
+            repeat API calls, built on MVC with GetX for state.</p>
+          <div class="proj-tags"><span>Flutter</span><span>REST API</span><span>GetX</span><span>MVC</span></div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-top">
+            <span class="proj-file">realtime_comm.dart</span>
+          </div>
+          <h3>Real-Time Communication App</h3>
+          <p>Engineered with Flutter and WebRTC for peer-to-peer calling, with streaming optimizations
+            that reduced latency by 28%.</p>
+          <div class="proj-tags"><span>Flutter</span><span>Provider</span><span>WebRTC</span></div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-top">
+            <span class="proj-file">Agrimate.java</span>
+            <span class="proj-badge">award</span>
+          </div>
+          <h3>Agrimate</h3>
+          <p>Native Android app built to solve real-world problems for farmers, winner of the SRUJAN
+            competition among 60+ competing teams.</p>
+          <div class="proj-tags"><span>Android SDK</span><span>Java</span><span>REST API</span><span>Product MVP</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="block" style="padding-bottom:0; border-bottom:none;">
+    <div class="wrap">
+      <div class="block-head reveal">
+        <div>
+          <div class="eyebrow">~/dev/achievements</div>
+          <h2>Recognition</h2>
+        </div>
+      </div>
+    </div>
+    <div class="wrap" style="padding:0;">
+      <div class="ach-row reveal">
+        <div class="ach-item">
+          <div class="ach-num">01</div>
+          <p><b>1st Prize</b> among 60+ teams in a project competition, for an Android app solving real-world problems for farmers.</p>
+        </div>
+        <div class="ach-item">
+          <div class="ach-num">02</div>
+          <p>Delivered an <b>Android App Development Workshop</b> to 100+ college students.</p>
+        </div>
+        <div class="ach-item">
+          <div class="ach-num">03</div>
+          <p><b>Core Android Team Member</b>, Google Developer Student Clubs (GDSC), PES MCOE.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-head reveal">
+      <div>
+        <div class="eyebrow" style="color:#8b8983;">~/dev/contact</div>
+        <h2>Let's build something that ships.</h2>
+        <p>Open to Mobile Developer roles happy to talk about architecture, a
+          specific bug, or just the next app to build.</p>
+      </div>
+      <div class="foot-links">
+        <a href="mailto:parajiholkar81@gmail.com" class="btn">Email me →</a>
+        <a href="tel:+918788286217" class="btn ghost">Call</a>
+      </div>
+    </div>
+
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="g-label">contact</div>
+        <a href="mailto:parajiholkar81@gmail.com">parajiholkar81@gmail.com</a>
+        <a href="tel:+918788286217">+91 8788286217</a>
+      </div>
+      <div class="foot-col">
+        <div class="g-label">elsewhere</div>
+        <a href="https://www.linkedin.com/in/paraji-holkar/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/parajiholkar" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="foot-col">
+        <div class="g-label">based in</div>
+        <span>Pune, India</span>
+        <span>IST (UTC+5:30)</span>
+      </div>
+      <div class="foot-col">
+        <div class="g-label">navigate</div>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© 2026 Paraji Holkar</span>
+      <span>Android · Flutter · mobile engineering</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile menu toggle
+  const hamburger = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  function setMenu(open){
+    mobileMenu.classList.toggle('open', open);
+    hamburger.classList.toggle('is-open', open);
+    hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    mobileMenu.setAttribute('aria-hidden', open ? 'false' : 'true');
+    document.body.classList.toggle('menu-open', open);
+  }
+
+  hamburger.addEventListener('click', () => {
+    setMenu(!mobileMenu.classList.contains('open'));
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => setMenu(false));
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setMenu(false);
+  });
+
+  // close mobile menu if resized to desktop width
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 880) setMenu(false);
+  });
+
+  // scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  reveals.forEach(el => io.observe(el));
+</script>
 
 </body>
 </html>
